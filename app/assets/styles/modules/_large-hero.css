@@ -1,0 +1,39 @@
+$mainBlue: #2f5572;
+$mainFontSize: 4.8rem;
+.large-hero{
+    position: relative;
+
+    &__text-contant{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+        
+    &__title,
+    &__subtitle{
+        font-weight: 300;
+        color: $mainBlue ;
+        font-size: $mainFontSize;
+        margin: 0;
+    }
+    &__subtitle{
+        font-size: 2.9rem;
+    }
+
+    &__description{
+        color: whitesmoke;
+        font-size: 1.875rem;
+        font-weight: 100;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+

@@ -1,0 +1,19 @@
+
+.btn{
+    background-color:$mainBlue ;
+    font-weight:450;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+    border-radius: 0.3rem;
+
+    &__orenge{
+        background-color: $mainOrenge;
+    }
+    &__large{
+        font-size: 1.25rem;
+        padding: 0.6rem 1.0rem;
+    }
+}
