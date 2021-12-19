@@ -30,11 +30,6 @@
         margin-bottom: 1.3em;
     }
     &__no-t-margin{
-        margin-top: 1rem;
-    }
-    @mixin atSmall {
-        &__no-t-margin{
-            margin-top: 0;
-        }
+        margin-top: 0;
     }
 }

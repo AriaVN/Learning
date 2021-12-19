@@ -1,7 +1,9 @@
 .page-section{
-    padding: 1.5rem 0;
-    @mixin atSmall {
-        padding: 4.5rem 0;
+
+    padding: 0.5rem 0;
+
+    @mixin atMedium {
+        padding: 1.5rem 0;
     }
 
     &__blue{
@@ -9,4 +11,7 @@
         color: white;
     }
     
+    p {
+        text-align: justify;
+    }
 }

@@ -2,21 +2,37 @@
     
     /*display: flex;*/
     @mixin clearfix{};
-    /*&__gutters{
-        padding-right: -65px;
-    }*/
-    &__gutters > div{
-       /* padding-right: 65px;*/
-        /*box-sizing: border-box;*/
-    }
+    
+
     &__b-margin-until-medium{
         margin-bottom: 1rem;
     }
     @mixin atMedium {
+        &__gutters-small{
+            padding-right: -10px;
+        }
+        &__gutters-small > div{
+            padding-right: 10px;
+            /*box-sizing: border-box;*/
+        }
+        &__gutters{
+            padding-right: -65px;
+        }
+        &__gutters > div{
+            padding-right: 65px;
+            /*box-sizing: border-box;*/
+        }
+        &__gutters-large{
+            padding-right: -85px;
+        }
+        &__gutters-large > div{
+            padding-right: 85px;
+            /*box-sizing: border-box;*/
+        }
         &__medium-4{
             float: left;
             width: 33.3%;
-            padding-right: 65px;
+            padding-right: 0px;
         }
         &__medium-8{
             float: left;
@@ -26,7 +42,7 @@
         &__medium-4_5{
             float: left;
             width: 36.3%;
-            padding-right: 65px;
+            padding-right: 0px;
         }
         &__medium-7_5{
             float: left;
@@ -35,6 +51,23 @@
         }
         &__b-margin-until-medium{
             margin-bottom: 0;
+        }
+
+        &__medium-6{
+            float: left;
+            width: 50%;
+            padding-right: 0px;
+        }
+        
+        &__medium-2{
+            float: left;
+            width: 15%;
+            padding-right: 0px;
+        }
+        &__medium-10{
+            float: left;
+            width: 85%;
+            padding-right: 0px;
         }
     }
 }
