@@ -1,6 +1,6 @@
 
 .btn{
-    background-color:$mainBlue ;
+    background-color:$mainBlue;
     font-weight:450;
     text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
     color: whitesmoke;
@@ -13,7 +13,9 @@
         background-color: $mainOrenge;
     }
     &__large{
-        font-size: 1.25rem;
-        padding: 0.6rem 1.0rem;
+        @mixin atSmall {
+            font-size: 1.25rem;
+            padding: 0.6rem 1.0rem;
+        }
     }
 }
