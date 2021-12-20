@@ -1,4 +1,5 @@
 .section-title{
+
    font-size: 2rem;
    font-weight: 300;
    text-align: center;
@@ -7,20 +8,29 @@
    &__centered{
        text-align: center;
    }
+
    @mixin atMedium{
        font-size: 3.875;
        margin-bottom: 3rem;
        &__centered{
         text-align: left;
-    }
+        }
    } 
+
    strong{
        font-weight: 500;
    }
+
    &__icon{
        max-width: 4rem;
        margin-right: 0.5rem;
-       transform: translateY(0.4em);
+       transform: translateY(0.5em);
+       display: inline-block;
+
+   }
+
+   &_blue{
+       color: $mainBlue;
    }
 
 

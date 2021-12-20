@@ -12,10 +12,20 @@
         padding-left: 0;
         padding-right: 0;
     }
+    
+
     &_b-margin{
         margin-bottom: 1rem;
         @mixin atSmall{
             margin-bottom: 2.875rem ;
+        }
+    }
+    &__no-RL-padding-until-atLarg{
+        padding-left: 0;
+        padding-right: 0;
+        @mixin atLarg{
+                padding-left: 10px;
+                padding-right: 10px;
         }
     }
 }

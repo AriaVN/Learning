@@ -1,0 +1,28 @@
+.testimonial{
+    
+        &__img{
+            border-radius: 50%;
+            border: 4px solid whitesmoke;
+            /*display: block;*/
+            transform: translateY(-50%);
+            margin: 0 0 -90px 0;
+        }
+        background-color: rgba(255,255,255,0.75);
+        align-items: center;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0.5rem;
+        &__title{
+            color: $mainBlue;
+            font-weight: 900;
+            font-size: 2rem;
+            margin: 0.3rem auto 0.3rem auto;
+        }
+        &__subtitle{
+            color: $mainOrenge;
+            font-size: 1.2rem;
+            margin: 0.3rem auto 1rem auto;
+        }
+    
+}
