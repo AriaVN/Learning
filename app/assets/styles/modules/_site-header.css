@@ -10,8 +10,12 @@
         background-color: rgba(47,85,114,0.6);
     }
     @mixin atMedium {
+        position: fixed;
         background-color: rgba(47,85,114,0.4);
         height: 60px;
+        &__dark{
+            background-color: rgba(23,51,72,0.8);
+        }
     }
     
     &__container{
@@ -88,11 +92,16 @@
         text-align: center;
         width: 110px;
         padding: 1rem;
+        transition: transform 0.4s ease-out,transform-origin 0.4s ease-out;
         @mixin atMedium {
             left: 10px;
             transform: translateX(0);
             width: 200px;
             padding: 1.5rem;
+            .site-header__dark & {
+                transform-origin: 50% 0;
+                transform: scale(0.54);
+            }
         }
     }
     &__btn{
@@ -147,7 +156,9 @@
                 border-radius: 0;
                 background-color:rgba(0,0,0,0);
                 text-shadow: 1px 1px 0 black;
-
+            }
+            &.is-currentLink{
+                color: orange;
             }
         }
     }
