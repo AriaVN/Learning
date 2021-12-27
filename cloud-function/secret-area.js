@@ -13,7 +13,7 @@ exports.handler = function(event, context, callback){
     if(inputBody.password == "strongPassword"){
         callback(null, {
             statusCode: 200,
-            body: "Welcome to the super secret area."
+            body: secretContent
         })
     }else{
         callback(null,{
