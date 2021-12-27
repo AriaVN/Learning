@@ -9,7 +9,7 @@
     display: inline-block;
     border-radius: 0.1rem;
 
-    &__orenge{
+    &__orange{
         background-color: $mainOrenge;
     }
     &__large{
