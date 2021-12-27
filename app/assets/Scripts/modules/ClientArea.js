@@ -1,5 +1,6 @@
 
-import { Axios } from "axios"
+import Axios from "axios"
+
 class ClientArea {
     constructor(){
         this.injectHtml()
