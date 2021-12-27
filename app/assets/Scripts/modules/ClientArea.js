@@ -18,13 +18,12 @@ class ClientArea {
 
     sentRequest(){
         let url = 'https://inspiring-curie-897b58.netlify.app/.netlify/functions/secret-area'
-        let pass={ password: this.field.value }
-        Axios.post(url , pass).then(
+        let pass= { password: this.field.value }
+        Axios.post(url , { password: this.field.value }).then(
             response=>{
                 this.form.remove()
                 this.contentArea.innerHTML = response.data
-            }
-        ).catch(
+            }).catch(
             ()=> {
                 this.contentArea.innerHTML = `<p class="client-area__error">try again</p>`
                 this.field.value=''
